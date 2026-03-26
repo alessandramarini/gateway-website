@@ -33,10 +33,11 @@
                     },
                     colors: {
                         gateway: {
-                            900: '#0B0F19',
-                            800: '#111827',
+                            900: '#0B0F19', // Main background base
+                            800: '#111827', // Card background
                             primary: '#06b6d4',
                             secondary: '#8b5cf6',
+                            bgDark: '#080c14' // Special dark tone for image container
                         }
                     }
                 }
@@ -213,9 +214,9 @@
             </div>
 
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-10">
-                <div class="glass-card rounded-3xl overflow-hidden flex flex-col md:flex-row">
-                    <div class="h-56 sm:h-64 md:h-auto md:w-2/5 relative bg-white p-6 flex items-center justify-center">
-                        <img src="https://m.media-amazon.com/images/I/81kpHwpmGPL._AC_SL1500_.jpg" alt="Muse S Headband" class="w-full h-full object-contain hover:scale-105 transition-transform duration-300 drop-shadow-lg">
+                <div class="glass-card rounded-3xl overflow-hidden flex flex-col md:flex-row border border-white/5">
+                    <div class="h-56 sm:h-64 md:h-auto md:w-2/5 relative bg-gateway-bgDark p-6 flex items-center justify-center border-r border-white/5 md:border-r md:border-b-0 border-b">
+                        <img src="https://m.media-amazon.com/images/I/81kpHwpmGPL._AC_SL1500_.jpg" alt="Muse S Headband" class="w-full h-full object-contain hover:scale-105 transition-transform duration-300">
                     </div>
                     <div class="md:w-3/5 p-6 md:p-8 flex flex-col justify-center text-center md:text-left">
                         <div class="text-emerald-400 text-xs font-bold tracking-widest uppercase mb-2">Neural Monitoring</div>
@@ -229,9 +230,9 @@
                     </div>
                 </div>
 
-                <div class="glass-card rounded-3xl overflow-hidden flex flex-col md:flex-row">
-                    <div class="h-56 sm:h-64 md:h-auto md:w-2/5 relative bg-white p-6 flex items-center justify-center">
-                        <img src="https://m.media-amazon.com/images/I/91c2d-xGx4L._AC_SL1500_.jpg" alt="Sennheiser HD 599" class="w-full h-full object-contain hover:scale-105 transition-transform duration-300 drop-shadow-lg">
+                <div class="glass-card rounded-3xl overflow-hidden flex flex-col md:flex-row border border-white/5">
+                    <div class="h-56 sm:h-64 md:h-auto md:w-2/5 relative bg-gateway-bgDark p-6 flex items-center justify-center border-r border-white/5 md:border-r md:border-b-0 border-b">
+                        <img src="https://m.media-amazon.com/images/I/91c2d-xGx4L._AC_SL1500_.jpg" alt="Sennheiser HD 599" class="w-full h-full object-contain hover:scale-105 transition-transform duration-300">
                     </div>
                     <div class="md:w-3/5 p-6 md:p-8 flex flex-col justify-center text-center md:text-left">
                         <div class="text-amber-400 text-xs font-bold tracking-widest uppercase mb-2">Audiophile Fidelity</div>
